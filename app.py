@@ -60,7 +60,7 @@ def app():
 
     countyOption = getCountyOption(bookstoreList)
 
-    st.header('書店地圖')
+    st.header('台灣特色書店地圖')
     st.metric('Total bookstore', len(bookstoreList))
     county = st.selectbox('請選擇縣市', countyOption)
     districtOption = getDistrictOption(bookstoreList, county)
